@@ -41,9 +41,9 @@ public class GradingSystem {
     // If percentage is 60 or higher, return a String that says "A retake is not
     // required."
 
-    if (percentage < 60 & allowedToRetake == true) {
+    if (percentage < 60 && allowedToRetake == true) {
       return "The student has been entered for a retake.";
-    } else if (percentage < 60 & allowedToRetake == false) {
+    } else if (percentage < 60 && allowedToRetake == false) {
       return "The student is not allowed to retake this exam.";
     } else if (percentage >= 60) {
       return "A retake is not required.";
